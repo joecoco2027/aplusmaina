@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}{% endblock %}
+    <link rel="icon" href="{% static 'mainsystem/assets/images/favicon-aplus.png' %}">
+    <link rel="stylesheet" href="{% static 'mainsystem/css/style.css' %}" type="text/css">
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+</head>
+<body>
+    <header id="header" class="group" role="banner">
+        <a href="{% url 'home' %}" title="A Plus Navigators Home Page">
+            <img src="{% static 'mainsystem/assets/images/apluslogo.png' %}" alt="" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li><li>
+                    <a href="#">Flights</a>
+                </li><li>
+                    <a href="#">About</a>
+                </li><li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Login</a>
+                </li><li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    {% block main %}{% endblock %}
+    
+    <footer id="footer" role="contentinfo" >
+        <div class="container">
+            <ul>
+                <li class="small-logo">
+                    <a href="#" title="Return to the front page">
+                        APLUS-NAVIGATORS, FLIGHTS AND PARCEL
+                    </a>
+                </li>
+                <li class="copyrighter">
+                    <small>&copy Copyright 2024 A Plus Navigators</small>     
+                       
+                </li>
+                <li class="back-to-top">
+                    <a href="#header" title="Go back to the top of the page">
+                        BACK TO TOP
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <div class="divall div1">
+                <ul>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                    <li><a href="">travel</a></li>
+                </ul>
+            </div>
+            <div id="divdiv">
+                <div class="divall div2">
+                    <ul>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                    </ul>
+                </div>
+                <div class="divall div3">
+                    <ul>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                    </ul>
+                </div>
+                <hr style="width: 100%;">
+                <div class="divall div4">
+                    <ul>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                    </ul>
+                </div>
+                <div class="divall div5">
+                    <ul>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                    </ul>
+                </div>
+                <div class="divall div6">
+                    <ul>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                        <li><a href="">travel</a></li>
+                    </ul>
+                </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

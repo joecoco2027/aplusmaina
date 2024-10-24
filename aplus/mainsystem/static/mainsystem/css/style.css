@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+i am reseting the default styles of browsers 
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section 
+{
+    display: block;
+}
+body 
+{
+    line-height: 1;
+}
+ol, ul 
+{
+    list-style: none;
+}
+blockquote, q 
+{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: ‘’;
+    content: none;
+}
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    background-image: linear-gradient(rgba(110, 110, 110,0.5) 70%, transparent);
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em auto 1em auto;
+}
+
+
+#header{
+    margin: 1em;
+    background-color: white;
+
+}
+#header .logo{
+    margin: 0 0;
+    float: left;
+    width: 100px;
+
+}
+
+#header nav ul{
+    margin-top: 0;
+    float: left;
+}
+
+#header nav > ul > li{
+    background: white;
+    display: inline-block;
+}
+
+#header nav ul:nth-child(1) li:first-child{
+    border-top-left-radius:  50%;
+    border-bottom-left-radius: 50%/10%;
+}
+#header nav ul:nth-child(1) li:last-child{
+    border-top-right-radius:  50%/10%;
+    border-bottom-right-radius: 50%;
+}
+#header nav ul:first-child{
+    position: relative;
+}
+#header nav ul:nth-child(2){
+    float: right;
+}
+#header nav ul:nth-child(2) li:first-child{
+    border-top-left-radius:  50%;
+    border-bottom-left-radius: 50%/10%;
+}
+#header nav ul:nth-child(2) li:last-child{
+    border-top-right-radius:  50%/10%;
+    border-bottom-right-radius: 50%;
+}
+
+
+#header nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+#header nav ul li:hover{
+    background-color: #000000;
+}
+#header nav ul li a:hover{
+    color: white;
+}
+
+#main{
+    position: absolute;
+    background: rgb(230, 227, 227);
+    margin : 120px auto 5em 1em;
+    width: 98%;
+    display: block;
+    border: 1px solid grey;
+    box-shadow: 0 0 8px 8px rgb(184, 158, 158);
+    border-radius: 2%;
+    height: 70%;
+   
+}
+
+
+#showcase ul{
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    width: 100%;
+    perspective-origin: center;
+    position: absolute;
+    top: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+/*
+.showcase2{
+    border-radius: 60% 60% 0 0;
+}
+.showcase1{
+    border-radius: 10% 40% 20% 10% / 100% 10% 100% 10%;
+}
+.showcase3{
+    border-radius: 20% 10% 40% 10% / 100% 10% 30% 10%;
+}
+*/
+.showcase ul{
+    display: block;
+    -webkit-perspective: 10000px;
+    -webkit-perspective-origin: center;
+    perspective-origin: 50% 0;
+    perspective: 100%;
+    backface-visibility: hidden;
+}
+
+#showcase ul li:nth-child(2){
+    transform: translateZ(-1000px);
+    border-radius: 100px    ;
+}
+
+#showcase ul li img{
+    padding: 1em 0 2em 1em;
+    width: 33%;
+    height: 400px;
+    margin-right: 0;   
+}
+
+#showcase ul li img:first-child{
+    float: left;
+}
+
+
+.bookings{
+    background: rgba(0,0,255,0.5);
+    width: fit-content;
+    transform: translate(80%,-50px);
+    position: relative; 
+    padding-bottom: 1em;
+    z-index: 1;
+
+}
+
+.bookings img{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    left: 35%;
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+    
+}
+.bookings button{
+    display: inline-block;
+    width: 15%;
+    height: 36px;
+    background-color: #777777;
+    transform: translateY(5px);
+    border-radius: 10px;
+}
+
+.inputData input{
+    width: 40%;
+    margin : 1em 0 1em 0;
+    box-shadow: 1 0 1px 0 grey inset;
+    padding: 10px 0 10px 0;
+    font-size: 15px;
+    color: black;
+    outline: none;
+
+}
+.inputData{
+    display: block;
+}
+.inputData input:first-child{
+    text-align: left;
+    text-indent: 10em;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 1em;
+}
+.inputData input:nth-child(2){
+    text-align: left;
+    text-indent: 1em;
+    margin-left: 0;
+    padding: 0.75em;
+    transform: translateX(-10px);
+    border: none;
+}
+
+
+#flight-schedule{
+    position: absolute;
+    margin-left: 1em;
+    margin-bottom: 5em;
+    max-width: 100%;
+    width: 98%;
+    height: 95%;
+    transform: translateY(600px);
+    border-radius: 10%;
+}
+#flight-schedule .flight-image .image1{
+    height: 600px;
+    float: left;
+}
+#flight-schedule .flight-image{
+    margin-left: 2em;
+}
+#flight-schedule .flight-image:nth-child(3){
+
+}
+
+#flight-schedule img{
+    width: 32%;
+    padding: 1em;
+    height: 300px;
+    margin: 0.1em;
+    float:left;
+    border-radius: 10%;
+    object-fit: cover;
+}
+#flight-schedule img:first-child{
+    float: left;
+}
+footer{
+    position: absolute;
+    background: white;
+    width: 100%;
+    margin: 2.5em 0 0 auto;
+    padding: 0.1em;
+    border: 1px solid grey;
+    padding-top: 1em;
+    font-weight: bold;
+    bottom: 0;
+
+    font-family: 'Poppins','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    transform: translateY(280%);
+
+}
+
+#footer .container li:nth-child(1) a{
+    float: left;
+    text-decoration: none;
+}
+#footer .container li:nth-child(2) {
+    padding-left: 50%;
+}
+#footer .container li:nth-child(3) a{
+    float: right;
+    transform: translateY(-15px);
+    text-decoration: none;
+
+}
+#footer .divall{
+    width: 30%;
+    float: left;
+    padding: 1em 0 1em 1em;
+    margin-left: 2.5em;
+    margin-right: 0;
+}
+#footer .divall a{
+    text-decoration: none;
+}

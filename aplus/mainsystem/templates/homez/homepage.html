@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}A-PLUS NAVIGATORS{% endblock title %}
+
+{% block main %}
+    <div id="main" class="group">
+        <div class="bookings">
+            <h1>Book Here</h1>
+            <div class="inputData">
+                <input type="text" id="from" class="from" placeholder="From">
+                <input type="text" id="to" class="to" placeholder="To">
+                <button type="submit">Search Flight</button>
+                <img src="{% static 'mainsystem/assets/images/icon1.png' %}" alt="" class="inputpic">
+            </div>
+        </div>
+        <div id="showcase" class="showpics" >
+            <ul>
+                <li>
+                    <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="showcase1">
+                </li>
+                <li>
+                    <img src="{% static 'mainsystem/assets/images/featured-02.jpg' %}" alt="" class="showcase2">
+                </li>
+                <li>
+                    <img src="{% static 'mainsystem/assets/images/featured-03.jpg' %}" alt="" class="showcase3">
+                </li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<div id="flight-schedule">
+    <div class="flight-image">
+        <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="image1">
+    </div>
+
+    <div class="flight-image">
+        <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="image2">
+    </div>
+
+    <div class="flight-image">
+        <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="image3">
+    </div>
+    <div class="flight-image">
+        <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="image4">
+    </div>
+    <div class="flight-image">
+        <img src="{% static 'mainsystem/assets/images/featured-01.jpg' %}" alt="" class="image5">
+    </div>
+</div>  
+{% endblock%}
